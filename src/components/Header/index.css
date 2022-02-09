@@ -1,0 +1,109 @@
+
+
+header{
+    width: 100vw;
+    height: 46px;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    margin-bottom: 2px;
+    box-shadow: 2px 2px 4px rgb(0 0 0 / 100%);
+    color: white;
+    align-items: center;
+}
+
+header p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+button{
+    width: 100px;
+    height: 40px;
+    border: none;
+    font-size: 18px;
+    border-radius: 50px;
+    background: linear-gradient(
+     95.16deg, #00B2FF 3.76%, #FF2CDF 83.3%);
+     font-weight: bold;
+     box-shadow: 1px 1px 10px 5px rgb(0 178 255);
+     color: white;
+}
+
+header button:hover{
+    color: black;
+    background: linear-gradient(
+     95.16deg, #00B2FF 3.76%, #FF2CDF 83.3%);
+     font-weight: bold;
+     box-shadow: 1px 1px 10px 5px rgb(0 178 255);
+}
+
+#checkbox-menu{
+    position: absolute;
+    opacity: 0;
+}
+
+
+@media (max-width: 715px) {
+ nav{
+     display: none;
+ }
+}
+
+
+@media (max-width: 725px){
+    
+    label{
+        cursor: pointer;
+        display: block;
+        height: 15px;
+        width: 35px;
+        position: relative;
+      
+    }
+
+    label span{
+        display: block;
+        height: 3px;
+        width: 100%;
+        border-radius: 30px;
+        background: linear-gradient(
+            95.16deg, #00B2FF 3.76%, #FF2CDF 83.3%);
+        transition: 0.25s ease-in-out;
+        position: absolute;
+    }
+
+    label span:nth-child(1){
+        top: 0;
+    }
+    label span:nth-child(2){
+       top: 8px;
+    }
+    label span:nth-child(3){
+        top: 16px;
+    }
+
+#checkbox-menu:checked + label span:nth-child(1){
+      transform: rotate(-45deg);
+      top: 8px;
+}
+#checkbox-menu:checked + label span:nth-child(2){
+    opacity: 0;
+}
+#checkbox-menu:checked + label span:nth-child(3){
+    transform: rotate(45deg);
+    top: 8px;
+}
+}
