@@ -1,0 +1,14 @@
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    gap: 30px;
+    padding: 25px;
+    background:  linear-gradient(
+    95.16deg, black 3.76%, #00B2FF 83.3%);
+    box-sizing: border-box;
+    backdrop-filter: blur(200px);
+    color: #ffffff;
+}
