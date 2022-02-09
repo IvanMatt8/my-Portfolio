@@ -1,0 +1,49 @@
+
+
+#wrapper-quemsou{
+    display: flex;
+    color: white;
+    width: 100%;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.text-quemsou{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.text-quemsou h1{
+    color: #00B2FF;
+    font-size: 50px;
+}
+
+.image-quemsou {
+    width: 400px;
+    animation: gira 8s linear 1000;
+}
+
+@keyframes gira{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+@media (max-width: 715px){
+    .wrapper-quemsou {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    }
+    .image-quemsou{
+       display: none;
+    }
+    .text-quemsou{
+        text-align: center;
+        width: 100%;
+    }
+}
